@@ -33,11 +33,6 @@
 </head>
 <body>
   <!-- initial src is the base. script below will append the page query string if present -->
-<!--   <iframe id="ndbFrame"
-    src="https://script.google.com/macros/s/AKfycbwyTk9NwuZGX4-H87FYusrzJ1Yr75o6m7MK3Rkge-hBCj4WhFhiPB4qzKlcEIU76KKV/exec"
-    allow="clipboard-write; clipboard-read; geolocation; microphone; camera; accelerometer; gyroscope; autoplay">
-  </iframe>
-   -->
   <iframe id="ndbFrame"
     src="https://script.google.com/macros/s/AKfycbwyTk9NwuZGX4-H87FYusrzJ1Yr75o6m7MK3Rkge-hBCj4WhFhiPB4qzKlcEIU76KKV/exec"
     allow="clipboard-write; clipboard-read; geolocation; microphone; camera; accelerometer; gyroscope; autoplay">
@@ -45,9 +40,8 @@
 
   
   <script>
-    (function(){      
-      // const base = 'https://script.google.com/macros/s/AKfycbz8JLL6-WrDSGjL2_rmZaLterlsnhnB8GziDot584Pn0O5qQAPJZVRj69O93yaNBXys/exec';
-      const base = 'https://script.google.com/macros/s/AKfycby_CzMyOVMuwscPl_0rQ-NbGCJiX6dnJG7veal7DYPdfTMj1jNfs1LXzVFnby6lhoDD/exec';
+    (function(){            
+      const base = 'https://script.google.com/macros/s/AKfycbwyTk9NwuZGX4-H87FYusrzJ1Yr75o6m7MK3Rkge-hBCj4WhFhiPB4qzKlcEIU76KKV/exec';
       const pageQS = location.search || ''; // includes leading '?' when present
 
       // OPTION 1 (default): forward entire query string from parent to iframe
